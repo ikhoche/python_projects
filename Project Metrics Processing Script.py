@@ -3,7 +3,6 @@
 
 # This script creates a table from using data from JIRA and calculates how many User Stories and Bugs were Created and Resolved per day per project.
 
-# In[2]:
 
 
 import pandas as pd
@@ -44,13 +43,12 @@ resolveduserstories = userstories.groupby(['resolved date', 'Fixed Version','Cre
 createduserstories.append(resolveduserstories).to_csv('ZS Web 2.0Mallorca_us.csv') # Create file with bugs created/resolved counts
 
 
-# In[4]:
 
 
 
 
 
-# In[ ]:
+
 
 
 

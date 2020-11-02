@@ -8,7 +8,7 @@
 #     - Affects Version, Fix Version, Component have several columns - get data from them and put into one single column
 # 3. Combine the JIRA files into one file and export
 
-# In[2]:
+
 
 
 def cleanAffectsversion (affects):
@@ -28,7 +28,7 @@ def cleanAffectsversion (affects):
         print("There are more than 4 Affects Versions")
 
 
-# In[3]:
+
 
 
 def cleanFixversion (fix):
@@ -48,7 +48,7 @@ def cleanFixversion (fix):
         print("There are more than 4 Fix Versions")
 
 
-# In[4]:
+
 
 
 def addComponentnumber():
@@ -63,7 +63,7 @@ def addComponentnumber():
     nf.columns = cols
 
 
-# In[35]:
+
 
 
 def cleanComponentversion (component):
@@ -100,7 +100,7 @@ def cleanComponentversion (component):
     
 
 
-# In[42]:
+
 
 
 import pandas as pd
@@ -128,8 +128,6 @@ for file in filelist:
     newdataframe = newdataframe.append(nf)
     newdataframe.to_csv('check.csv')
 
-
-# In[ ]:
 
 
 
